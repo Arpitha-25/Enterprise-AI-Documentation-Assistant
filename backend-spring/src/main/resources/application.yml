@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: networkassistant
+
+  datasource:
+    url: jdbc:postgresql://ep-wispy-haze-aibhbhdf.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require
+    username: neondb_owner
+    password: npg_nFRUyVru1w7G
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+server:
+  port: 8080
