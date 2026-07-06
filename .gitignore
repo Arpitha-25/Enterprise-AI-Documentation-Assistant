@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Node
+node_modules/
+
+# React
+frontend/dist/
+
+# Java
+target/
+*.class
+
+# IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ChromaDB
+ai-service/chroma_db/
+
+# Coverage
+coverage/
+
+# OS files
+*.swp
