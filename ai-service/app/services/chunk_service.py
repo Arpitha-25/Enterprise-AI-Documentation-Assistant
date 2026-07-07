@@ -1,4 +1,5 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from app.core.config import settings
 
 
 class ChunkService:
@@ -8,8 +9,8 @@ class ChunkService:
 
         splitter = RecursiveCharacterTextSplitter(
 
-            chunk_size=1000,
-            chunk_overlap=200,
+            chunk_size=settings.CHUNK_SIZE,
+            chunk_overlap=settings.CHUNK_OVERLAP,
             separators=[
                 "\n\n",
                 "\n",

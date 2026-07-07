@@ -13,6 +13,16 @@ class Settings(BaseSettings):
 
     MODEL_NAME: str = "llama-3.1-8b-instant"
 
+    CHUNK_SIZE: int = 1000
+
+    CHUNK_OVERLAP: int = 200
+
+    EMBEDDING_MODEL_NAME: str = "all-MiniLM-L6-v2"
+
+    CHROMA_COLLECTION_NAME: str = "network_docs"
+
+    LLM_TEMPERATURE: float = 0.2
+
     class Config:
         env_file = ".env"
 

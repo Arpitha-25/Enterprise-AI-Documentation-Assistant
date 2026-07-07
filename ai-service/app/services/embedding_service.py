@@ -1,9 +1,10 @@
 from sentence_transformers import SentenceTransformer
+from app.core.config import settings
 
 
 class EmbeddingService:
 
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+    model = SentenceTransformer(settings.EMBEDDING_MODEL_NAME)
 
     @classmethod
     def generate_embeddings(cls, chunks):

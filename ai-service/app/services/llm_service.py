@@ -38,7 +38,7 @@ Answer:
                 }
             ],
 
-            temperature=0.2
+            temperature=settings.LLM_TEMPERATURE
         )
 
         return response.choices[0].message.content

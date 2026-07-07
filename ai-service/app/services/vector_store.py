@@ -1,14 +1,15 @@
 import chromadb
+from app.core.config import settings
 
 
 class VectorStore:
 
     client = chromadb.PersistentClient(
-        path="chroma_db"
+        path=settings.CHROMA_DB_DIR
     )
 
     collection = client.get_or_create_collection(
-        name="network_docs"
+        name=settings.CHROMA_COLLECTION_NAME
     )
 
     @classmethod

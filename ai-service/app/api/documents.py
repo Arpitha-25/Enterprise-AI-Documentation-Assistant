@@ -6,13 +6,14 @@ from app.services.embedding_service import EmbeddingService
 from app.services.vector_store import VectorStore
 from app.services.pdf_service import PDFService
 from app.services.chunk_service import ChunkService
+from app.core.config import settings
 
 router = APIRouter(
     prefix="/documents",
     tags=["Documents"]
 )
 
-UPLOAD_DIR = "uploads"
+UPLOAD_DIR = settings.UPLOAD_DIR
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
