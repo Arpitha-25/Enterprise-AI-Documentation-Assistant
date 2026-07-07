@@ -1,5 +1,9 @@
 package com.netpilot.networkassistant.repository;
 
-public interface DocumentRepository {
-}
+import com.netpilot.networkassistant.entity.Document;
+import org.springframework.data.jpa.repository.JpaRepository;
 
+public interface DocumentRepository
+        extends JpaRepository<Document, Long> {
+
+}

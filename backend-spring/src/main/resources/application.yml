@@ -10,8 +10,19 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-
     show-sql: true
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
 
 server:
   port: 8080
+
+jwt:
+  secret: YOUR_SECRET
+  expiration: 86400000
+
+file:
+  upload-dir: uploads

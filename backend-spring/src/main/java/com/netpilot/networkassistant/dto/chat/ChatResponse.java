@@ -1,5 +1,6 @@
 package com.netpilot.networkassistant.dto.response;
 
-public class DocumentResponse {
+public class ChatResponse {
+    
 }
 

@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain-community
+langchain-text-splitters
+chromadb
+sentence-transformers
+pymupdf
+pydantic
+python-dotenv
+requests
+pydantic-settings
+sentence-transformers
+chromadb
+groq
